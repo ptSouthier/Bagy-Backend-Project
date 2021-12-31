@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ptSouthier/Bagy-Backend-Project/issues"
   },
-  "homepage": "https://github.com/ptSouthier/Bagy-Backend-Project#readme"
+  "homepage": "https://github.com/ptSouthier/Bagy-Backend-Project#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
 }
