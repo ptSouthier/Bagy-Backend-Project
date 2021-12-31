@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ptSouthier/Bagy-Backend-Project#readme",
   "dependencies": {
-    "graphql-yoga": "^1.18.3"
+    "graphql-yoga": "^1.18.3",
+    "sequelize": "^6.12.4",
+    "sqlite3": "^5.0.2"
   }
 }
