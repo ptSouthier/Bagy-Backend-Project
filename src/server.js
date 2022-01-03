@@ -1,6 +1,6 @@
 const { GraphQLServer } = require('graphql-yoga');
 const path = require('path');
-const resolvers = require('./resolvers');
+const resolvers = require('../resolvers');
 const database = require('./database/db');
 
 (async () => {

@@ -1,4 +1,4 @@
-const Customer = require('./database/models/Customer');
+const Customer = require('../src/database/models/Customer');
 
 const validateEmail = (email) => {
   const emailPattern = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
