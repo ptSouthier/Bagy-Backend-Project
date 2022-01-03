@@ -74,9 +74,18 @@ module.exports = {
       cep ? customer.address.cep = cep : null;
       number ? customer.address.number = number : null;
 
-      // Não consegui entender por que não é possível salvar especificamente as informações de endereço.
+      // Não consegui entender por que não é possível salvar especificamente as informações de endereço. Talvez seja porque o Address na tabela tem formato JSON.
       const updatedCustomer = await customer.save();
       return updatedCustomer;
+    },
+    deleteCustomer: async (_, { id }) => {
+      const deletedCustomer = await Customer.destroy({ where: { id } });
+      
+      if (!deletedCustomer) {
+        throw new Error("Inexistent Customer.")
+      }
+
+      return true;
     }
   }
 };
