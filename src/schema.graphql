@@ -36,7 +36,7 @@ type Product {
   name: String!
   image: String!
   description: String!
-  weight: Float!
+  weight: Float
   price: Float!
   quantity: Int!
 }
