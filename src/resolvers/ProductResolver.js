@@ -1,4 +1,4 @@
-const Product = require('../src/database/models/Product');
+const Product = require('../models/Product');
 
 module.exports = {
   Query: {
@@ -34,6 +34,7 @@ module.exports = {
       price ? product.price = price : null;
       quantity ? product.quantity = quantity : null;
 
+      // Weight também tem apresentado problema pra salvar. Tentar rebuildar o banco
       const updatedProduct = await product.save();
       return updatedProduct;
     },
