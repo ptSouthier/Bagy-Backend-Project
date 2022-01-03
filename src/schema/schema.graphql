@@ -31,13 +31,37 @@ type Address {
   number: String!
 }
 
+type Product {
+  id: ID!
+  name: String!
+  image: String!
+  description: String!
+  weight: String
+  price: Float!
+  quantity: Int!
+}
+
+input ProductInput {
+  name: String
+  image: String
+  description: String
+  weight: String
+  price: Float
+  quantity: Int
+}
+
 type Query {
   customers: [Customer!]!
   customer(id: ID!): Customer
+  products: [Product!]!
+  product(id: ID!): Product
 }
 
 type Mutation {
   createCustomer(data: CustomerInput!): Customer
   updateCustomer(id: ID!, data: CustomerInput): Customer
   deleteCustomer(id: ID!): Boolean
+  createProduct(data: ProductInput!): Product
+  updateProduct(id: ID!, data: ProductInput): Product
+  deleteProduct(id: ID!): Boolean
 }
