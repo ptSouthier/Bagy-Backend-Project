@@ -57,5 +57,26 @@ module.exports = {
 
       return customerObj;
     },
+    updateCustomer: async (_, { id, data }) => {
+      const { name, email, cpf, birthday } = data;
+      const { street, neighborhood, city, state, country, cep, number } = data;
+      const customer = await Customer.findOne({ where: { id } });
+
+      name ? customer.name = name : null;
+      email ? customer.email = email : null;
+      cpf ? customer.cpf = cpf : null;
+      birthday ? customer.birthday = birthday : null;
+      street ? customer.address.street = street : null;
+      neighborhood ? customer.address.neighborhood = neighborhood : null;
+      city ? customer.address.city = city : null;
+      state ? customer.address.state = state : null;
+      country ? customer.address.country = country : null;
+      cep ? customer.address.cep = cep : null;
+      number ? customer.address.number = number : null;
+
+      // Não consegui entender por que não é possível salvar especificamente as informações de endereço.
+      const updatedCustomer = await customer.save();
+      return updatedCustomer;
+    }
   }
 };
