@@ -32,7 +32,7 @@ const Customer = database.define('customer', {
     address: {
       type: Sequelize.JSON,
       allowNull: false
-    },
-})
+    }
+});
  
 module.exports = Customer;
