@@ -25,7 +25,7 @@ const Product = database.define('product', {
     },
 
     weight: {
-      type: Sequelize.FLOAT,
+      type: Sequelize.STRING,
     },
 
     price: {
