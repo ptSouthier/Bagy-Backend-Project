@@ -8,17 +8,17 @@ type Customer {
 }
 
 input CustomerInput {
-  name: String!
-  email: String!
-  cpf: String!
-  birthday: String!
-  street: String!
-  neighborhood: String!
-  city: String!
-  state: String!
-  country: String!
-  cep: String!
-  number: String!
+  name: String
+  email: String
+  cpf: String
+  birthday: String
+  street: String
+  neighborhood: String
+  city: String
+  state: String
+  country: String
+  cep: String
+  number: String
 }
 
 type Address {
@@ -38,4 +38,5 @@ type Query {
 
 type Mutation {
   createCustomer(data: CustomerInput!): Customer
+  updateCustomer(id: ID!, data: CustomerInput): Customer
 }
