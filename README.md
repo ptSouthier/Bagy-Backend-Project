@@ -44,4 +44,20 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
 ```
 
 5. Se em seu terminal apareceu a mensagem _"Connection has been established successfully!"_, significa que o banco de dados e o servidor API está rodando! Abra seu navegador e acesse **localhost:4000** para ter acesso ao Playground do GraphQL. Agora é só escrever suas [requisições GraphQL](https://graphql.org/learn/queries/) 😁
+
+
+---
+
+
+## Futuras Melhorias
+
+Refatoração do código atual e implementação dos serviços incompletos.
+
+Acréscimos ao README, como:
+  * Área de _Problemas Conhecidos_
+  * Exemplos de requisições à _API GraphQL_ do projeto
+  * Breve explicação das bibliotecas utilizadas
+  * Versão em inglês (uso de seções colapsadas com details e summary)
+
+
 ---
