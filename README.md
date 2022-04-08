@@ -1,4 +1,4 @@
-# Boas vindas ao repositório do Bagy-Backend-Project!
+# Boas vindas ao repositório do GraphQL-Backend-Project!
 ## Contexto
 
 Este projeto foi um desafio enviado para mim durante o Processo Seletivo na empresa [Bagy](https://www.linkedin.com/company/bagyapp/).
@@ -29,12 +29,12 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
 2. Entre no diretório que acabou de criar e depois clone o projeto:
 ```javascript
   cd desafio-backend-bagy
-  git clone git@github.com:ptSouthier/Bagy-Backend-Project.git
+  git clone git@github.com:ptSouthier/GraphQL-Backend-Project.git
 ```
 
 3. Agora entre no diretório do projeto clonado e rode o comando **npm install** para instalar as dependências do projeto _(não se preocupe, você poderá excluir tudo depois que utilizar o app :nerd_face:)_. 
 ```javascript
-  cd Bagy-Backend-Project
+  cd GraphQL-Backend-Project
   npm install
 ```
 
